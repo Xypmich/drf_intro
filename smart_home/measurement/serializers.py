@@ -21,4 +21,3 @@ class SensorAllDataSerializer(serializers.ModelSerializer):
     class Meta:
         model = Sensor
         fields = ['id', 'name', 'description', 'measurements']
-# TODO: опишите необходимые сериализаторы

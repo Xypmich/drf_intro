@@ -4,7 +4,6 @@ from .views import SensorsViewCreate, SensorsUpdateRetrieve, MeasurementCreate
 
 urlpatterns = [
     path('sensors/', SensorsViewCreate.as_view()),
-    path('sensors-data/<pk>/', SensorsUpdateRetrieve.as_view()),
-    path('measurement/', MeasurementCreate.as_view())
-    # TODO: зарегистрируйте необходимые маршруты
+    path('sensors/<pk>/', SensorsUpdateRetrieve.as_view()),
+    path('measurements/', MeasurementCreate.as_view())
 ]
